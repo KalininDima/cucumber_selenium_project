@@ -1,5 +1,10 @@
-@login
+@login @smoke
+
 Feature: Users should be able to login
+
+  Background:
+    Given the user is on the login page
+    And the title should contains "Login"
   @driver @new
   Scenario: Login as a driver
     Given the user is on the login page
