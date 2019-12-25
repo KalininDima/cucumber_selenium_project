@@ -6,11 +6,11 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        plugin = {"json:target/cucumber.json"},
+        plugin = {"json:target/cucumber.json","html:target/default-cucumber-reports"},
         features = "src/test/resources/features",
         glue = "com/vytrack/step_defenitions",
         dryRun = false,
-        tags = "@login"
+        tags ="@driver"
         //tags = "@driver and @new"  // new syntax
         //tags = "@driver and not @new"  // new syntax
         //tags = "@driver or @new"  // new syntax will run all @driver except @new
@@ -38,7 +38,13 @@ Expected url: https://qa3.vytrack.com/calendar/event
 After finishing the scenarios, add necessary tags, run through CukesRunner and generate steps defs.
 Copy paste the step definitions from console into new Step Definitions class called NavigationMenuStepDefintions.
  Implement the step definitions by adding print statements.
+
+#OPT+CMD+L
+#CTRL+ALT+L
+
  */
+
+
 public class CukesRunner {
 
 }
